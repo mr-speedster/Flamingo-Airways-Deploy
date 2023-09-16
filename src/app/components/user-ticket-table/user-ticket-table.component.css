@@ -1,0 +1,41 @@
+.btn-danger {
+  background-color: #c10000;
+}
+
+.text-danger{
+  color: #c10000 !important;
+}
+
+.thead-danger {
+  background-color: #c10000;
+  color: white;
+}
+
+
+.page-item.active .page-link {
+  background-color: #c10000;
+  border-color: #c10000;
+}
+
+.page-link {
+  color: #c10000;
+}
+
+.page-link:hover {
+  color: #c10000;
+}
+
+.page-link:focus {
+  box-shadow: none;
+}
+
+.modal-dialog {
+  max-width: 80%;
+  display: flex;
+}
+
+.badge-danger{
+  background-color: #c10000 !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 700 !important;
+}

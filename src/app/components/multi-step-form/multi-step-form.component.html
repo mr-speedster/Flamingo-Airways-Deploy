@@ -1,0 +1,209 @@
+<div class="container mt-5">
+    <mat-horizontal-stepper #stepper>
+        <mat-step label="Personal Details">
+            <div class="container-fluid my-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="card col-md-10">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label class="label-font" for="firstName">First Name</label>
+                                        <input type="text" value="Ajith" class="form-control" id="firstName">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="label-font" for="lastName">Last Name</label>
+                                        <input type="text" value="D" class="form-control" id="lastName">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label class="label-font" for="email">Email</label>
+                                        <input type="text" value="ad@ad.com" class="form-control" id="email">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="label-font" for="dob">DOB</label>
+                                        <input type="text" value="25-03-2002" class="form-control" id="dob">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label class="label-font" for="aadhar">Aadhar</label>
+                                        <input type="text" value="xxxx xxx x789" class="form-control" id="aadhar">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="label-font" for="aadhar">Passport</label>
+                                        <input type="text" value="xxxx xxx x789" class="form-control" id="aadhar">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <button class="btn btn-danger mx-2" mat-button (click)="nextStep(stepper)">Next</button>
+            </div>
+        </mat-step>
+        <mat-step label="Flight Details">
+            <div class="container-fluid my-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="card col-md-10">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label class="label-font" for="firstName">Flight Name</label>
+                                        <input type="text" value="DEL123" class="form-control" id="firstName">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="label-font" for="lastName">Flight Code</label>
+                                        <input type="text" value="AJR" class="form-control" id="lastName">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label class="label-font" for="firstName">From</label>
+                                        <input type="text" value="Delhi" class="form-control" id="firstName">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="label-font" for="lastName">To</label>
+                                        <input type="text" value="Goa" class="form-control" id="lastName">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label class="label-font" for="email">Date</label>
+                                        <input type="date" class="form-control" id="email">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="label-font" for="dob">Time</label>
+                                        <input type="time" class="form-control" id="dob">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label class="label-font" for="aadhar">No of Seats</label>
+                                        <input type="number" value="2" class="form-control" id="aadhar">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="label-font" for="aadhar">Price</label>
+                                        <input type="text" disabled value="6000" class="form-control" id="aadhar">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <button class="btn btn-danger mx-2" mat-button (click)="prevStep(stepper)">Previous</button>
+                <button class="btn btn-danger mx-2" mat-button (click)="nextStep(stepper)">Next</button>
+            </div>
+        </mat-step>
+        <mat-step label="Payment Mode">
+            <div class="container-fluid my-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="card col-md-10">
+                        <div class="card-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <input type="radio" id="creditCardRadio" name="payment" class="form-control">
+                                                <label for="creditCardRadio">
+                                                    <img class="img-fluid" width="200" src="/assets/images/credit-card.png" alt="">
+                                                    <br><small class="label-font">Credit Card</small>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <input type="radio" id="debitCardRadio" name="payment" value="Ajith" class="form-control">
+                                                <label for="debitCardRadio">
+                                                    <img class="img-fluid" width="200" src="/assets/images/debit-card.png" alt="">
+                                                    <br><small class="label-font">Debit Card</small>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <input type="radio" id="upiPayRadio" name="payment" value="Ajith" class="form-control">
+                                                <label for="upiPayRadio">
+                                                    <img class="img-fluid" width="200" src="/assets/images/upi-pay.png" alt="">
+                                                    <br><small class="label-font">UPI Payment</small>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <button class="btn btn-danger mx-2" mat-button (click)="prevStep(stepper)">Previous</button>
+                <button class="btn btn-danger mx-2" mat-button (click)="nextStep(stepper)">Next</button>
+            </div>
+        </mat-step>
+        <mat-step label="Payment">
+            <div class="container-fluid my-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="card col-md-10">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label class="label-font" for="creditCardNumber">Credit Card Number</label>
+                                        <input type="text" class="form-control" id="creditCardNumber">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="label-font" for="expirationDate">Expiration Date</label>
+                                        <input type="text" class="form-control" id="expirationDate">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label class="label-font" for="cvv">CVV</label>
+                                        <input type="text" class="form-control" id="cvv">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="label-font" for="holdername">Card Holder Name</label>
+                                        <input type="text" class="form-control" id="holdername">
+                                    </div>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <button class="btn btn-danger mx-2" mat-button (click)="prevStep(stepper)">Previous</button>
+                <button class="btn btn-danger mx-2" mat-button (click)="nextStep(stepper)">Next</button>
+            </div>
+        </mat-step>
+        <mat-step label="Done">
+            <div class="container-fluid my-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="img-fluid" width="350" src="/assets/images/ticket-confirm.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <button routerLink="/my-ticket" class="btn btn-danger mx-2">View Ticket</button>
+            </div>
+        </mat-step>
+    </mat-horizontal-stepper>
+</div>

@@ -1,0 +1,39 @@
+<div class="container">
+    <div class=" mt-5">
+        <strong><h1 class="text-danger">AVAILABLE TICKETS</h1></strong>
+    </div>
+    <div class="row">
+        <table datatable [dtOptions]="dtOptions" class="table">
+            <thead class="thead-danger">
+              <tr>
+                <th>SL.No</th>
+                <th>FLIGHT</th>
+                <th>FROM</th>
+                <th>TO</th>
+                <th>DATE</th>
+                <th>ARRIVAL TIME</th>
+                <th>DEPARTURE TIME</th>
+                <th>SEATS AVAILABLE</th>
+                <th>FARE/SEAT</th>
+                <th>BOOK NOW</th>
+              </tr>
+            </thead>
+            <tbody>id: 1,
+              <tr *ngFor="let flight of flightData">
+                <td>{{flight.id}}</td>
+                <td>{{flight.flightName}}</td>
+                <td>{{flight.from}}</td>
+                <td>{{flight.to}}</td>
+                <td>{{flight.date}}</td>
+                <td>{{flight.arrivalTime}}</td>
+                <td>{{flight.departureTime}}</td>
+                <td>{{flight.seatsAvailable}}</td>
+                <td>{{flight.farePerSeat}}</td>
+                <td>
+                  <a routerLink="/ticket/booking"><span class="badge badge-danger">Book Now</span></a>
+                </td>
+              </tr>
+            </tbody>
+        </table>          
+    </div>
+</div>

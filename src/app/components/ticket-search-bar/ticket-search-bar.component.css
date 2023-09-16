@@ -1,0 +1,27 @@
+.dropdown-menu{
+    max-height: 300px;
+    overflow-y: scroll;
+    transform: translate3d(5px, 5px, 0px)!important;
+}
+.btn:focus{
+    box-shadow: none;
+}
+.search-btn{
+    background-color: #c10000;
+    color: white;
+}
+
+.bg-color{
+    background-color: #c10000;
+    color: white;
+}
+
+.text-color{
+    color: #c10000;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+.card .card-body{
+    min-height: 6rem;
+}

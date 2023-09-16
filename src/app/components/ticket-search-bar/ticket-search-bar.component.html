@@ -1,0 +1,64 @@
+<section>
+    <div class="container">
+      <div class="row">
+        <div class="card col-md-3 border-0">
+          <div class="card-body">
+              <small>From</small>
+              <div class="card d-flex align-content-center flex-wrap justify-content-center">
+                <button class="btn" data-toggle="dropdown">
+                  <div class="card-body">
+                    <strong><h5 class="text-color">{{defaultFromPlace}}</h5></strong>
+                    <small><strong>({{defaultFromCode}})</strong></small>
+                  </div>
+                  <div class="dropdown">
+                    <div class="dropdown-menu">
+                        <a *ngFor="let airport of airportcode | keyvalue" class="dropdown-item" (click)="updateDefaultFromValuesDropdown(airport)">
+                            <h6>{{ airport.value }}<span>({{ airport.key }})</span></h6>
+                        </a>                    
+                    </div>
+                  </div>
+                </button>
+              </div>
+          </div>
+        </div>
+        <div class="card col-md-3 border-0">
+          <div class="card-body">
+              <small>To</small>
+              <div class="card d-flex align-content-center flex-wrap justify-content-center">
+                <button class="btn" data-toggle="dropdown">
+                  <div class="card-body">
+                    <strong><h5 class="text-color">{{defaultToPlace}}</h5></strong>
+                    <small><strong>({{defaultToCode}})</strong></small>
+                  </div>
+                  <div class="dropdown">
+                    <div class="dropdown-menu">
+                        <a *ngFor="let airport of airportcode | keyvalue" class="dropdown-item" (click)="updateDefaultToValuesDropdown(airport)">
+                            <h6>{{ airport.value }}<span>({{ airport.key }})</span></h6>
+                        </a>                    
+                    </div>
+                  </div>
+                </button>
+              </div>
+          </div>
+        </div>
+        <div class="card col-md-3 border-0">
+          <div class="card-body">
+            <small>Date</small>
+            <div class="card d-flex align-content-center justify-content-center">
+              <button class="btn">
+                <div class="card-body">
+                  <input type="date" class="form-control text-light bg-color">
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card col-md-3 border-0">
+          <div class="card-body d-flex align-content-center flex-wrap justify-content-left">
+            <button routerLink="/tickets/available" class="btn search-btn">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

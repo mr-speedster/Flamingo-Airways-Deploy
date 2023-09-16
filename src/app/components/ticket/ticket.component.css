@@ -1,0 +1,48 @@
+.side-border {
+  border-right: dashed white 4px;
+}
+.side-border-red {
+  border-right: dashed #c10000 4px;
+}
+
+.top-right-corner {
+  border-top-right-radius: 1.3rem;
+}
+
+.top-left-corner {
+  border-top-left-radius: 1.3rem;
+}
+
+.bottom-right-corner {
+  border-bottom-right-radius: 1.3rem;
+}
+
+.bottom-left-corner {
+  border-bottom-left-radius: 1.3rem;
+}
+
+.main-color-shadow {
+  background-color: #d0252530;
+}
+.ticket-font {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: black;
+}
+.ticket-font-lite {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: black;
+}
+.card {
+  border: none;
+  border-radius: 0%;
+  background-color: transparent !important;
+}
+.barcode{
+    height: 60px;
+}
+
+.ticket-logo{
+  width: 10rem;
+}

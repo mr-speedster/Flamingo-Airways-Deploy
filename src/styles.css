@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&family=Roboto+Condensed&display=swap');
+
+body{
+    padding-top: 5rem;
+    font-family: 'Roboto Slab', serif;
+}
+.main-color{
+    color: #C10000;
+}
+.main-color-bg{
+    background-color: #C10000;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.custom-font-lite{
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 100 !important;
+}
+.custom-font{
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 700 !important;
+}
