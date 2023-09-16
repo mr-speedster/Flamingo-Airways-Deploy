@@ -30,6 +30,7 @@ import { OfferTicketComponent } from './components/offer-ticket/offer-ticket.com
 import { AboutComponent } from './components/about/about.component';
 import { CustomerCareComponent } from './components/customer-care/customer-care.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { PreLoaderComponent } from './components/pre-loader/pre-loader.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { UserProfileComponent } from './components/user-profile/user-profile.com
     OfferTicketComponent,
     AboutComponent,
     CustomerCareComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    PreLoaderComponent
   ],
   imports: [
     BrowserModule,
